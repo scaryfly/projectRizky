@@ -29,7 +29,7 @@
       echo " 
         <div class='row'>
           <div class='col-4'>
-          <table width='1084' border= '0' class= 'table table-striped table—bordered table—hover'>
+          <table class= 'table table-striped table—bordered table—hover'>
             <tr bgcolor=".$head.">
               <td width= '106'   height='29'   align='center' >No</td>
               <td width='136' align='center'>Judul</td>
@@ -75,10 +75,7 @@
         </div>
       </div>
     </body>
-    <script>
-        function hrefBerita(id){
-          location.replace('index.php/?'+id);
-      }
+    <script src='./js/index.js'>
     </script>";
   }
 ?>
