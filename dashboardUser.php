@@ -13,23 +13,22 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height : 100px;">
         <span class="navbar-brand h1 text-white">Navbar Image</span>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="mx-auto">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class='container'>
+        <div class='row' style='margin-top:30px'>
+            <div class='col-3'>
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group">
+                        <li class="list-group-item">Home</li>
+                        <li class="list-group-item">Input</li>
+                        <li class="list-group-item">Edit</li>
+                        <li class="list-group-item">Delete</li>
+                        <li class="list-group-item">Logout</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='col-8' style='margin-left:10px;'>
+                <div class='card'>
+
+                
 
     

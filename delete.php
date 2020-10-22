@@ -4,8 +4,8 @@
     // Pesan Hapus data
     $sql = mysqli_query($conn, "DELETE FROM tbberita WHERE id_berita= $id_berita");
     if($sql){
-        echo "<script> window.location='index.php'; alert('Delete sukses'); </script>";
+        echo "<script> window.location='list.php'; alert('Delete sukses'); </script>";
     }else{
-        echo "<script> window.location='index.php'; alert('Delete gagal'); </script>";
+        echo "<script> window.location='list.php'; alert('Delete gagal'); </script>";
     }
 ?>

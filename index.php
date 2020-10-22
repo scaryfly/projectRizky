@@ -1,13 +1,6 @@
 <?php 
   include("./dashboard.php");
   include("./db.php");
-  $max = mysqli_num_rows(mysqli_query ($conn,"SELECT * FROM tbberita"));
-  $perhalaman = 5;
-  if(isset ($id)){
-      $start= ($id - 1) * $perhalaman;
-  }else{
-      $start=0;
-  }
   #query untuk menampilkan semua data yang berada di tabel mahasiswa
   $tampil = mysqli_query ($conn,"SELECT * FROM tbberita");
   $num = mysqli_num_rows($tampil);
