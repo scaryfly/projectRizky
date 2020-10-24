@@ -17,13 +17,13 @@
         <div class='row' style='margin-top:30px'>
             <div class='col-3'>
                 <div class="card" style="width: 18rem;">
-                    <ul class="list-group">
-                        <li class="list-group-item">Home</li>
-                        <li class="list-group-item">Input</li>
-                        <li class="list-group-item">Edit</li>
-                        <li class="list-group-item">Delete</li>
-                        <li class="list-group-item">Logout</li>
-                    </ul>
+                    <div class="list-group">
+                        <a href="list.php" class="list-group-item list-group-item-action">Beranda</a>
+                        <a href="input.php" class="list-group-item list-group-item-action">Input Berita</a>
+                        <a href="listEdit.php" class="list-group-item list-group-item-action">Ubah Berita</a>
+                        <a href="listDelete.php" class="list-group-item list-group-item-action">Hapus Berita</a>
+                        <a href="index.php" class="list-group-item list-group-item-action">Keluar</a>
+                    </div>
                 </div>
             </div>
             <div class='col-8' style='margin-left:10px;'>

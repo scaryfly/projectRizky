@@ -13,7 +13,7 @@ if(isset($_POST['submit'] ))
         if(mysqli_num_rows($query) > 0){
             $user = mysqli_fetch_array($query);
             if(strcmp($user['email'],$email) == 0 && strcmp($user['password'],$password) == 0){
-                echo "<script>window.location='input.php';</script>";
+                echo "<script>window.location='list.php';</script>";
             }else{
                 echo "<script>alert('Email dan Password Salah'); console.log('".$user['email']." , ".$user['password']."');</script>";    
             }

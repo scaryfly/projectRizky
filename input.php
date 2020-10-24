@@ -1,5 +1,5 @@
 <?php 
-include('./dashboard.php');
+include('./dashboardUser.php');
 include("./db.php");
 
 //PROSES HANDLE REQUEST POST
@@ -13,17 +13,15 @@ if(isset($_POST['submit'] ))
     }else{
         echo "<script>console.log('not success');</script>";
     }
-    
-    $id = $new_id_berita;
     $judul = $_POST['judul'];
     $berita = $_POST ['berita'];
     $tgl = date("Y-m-d");
 
-    $query = mysqli_query($conn,"INSERT INTO tbberita (id_berita, gambar, judul, berita, tgl_upload) values ('$id', '$foto', '$judul', '$berita', ' $tgl') ");
+    $query = mysqli_query($conn,"INSERT INTO tbberita (gambar, judul, berita, tgl_upload) values ('$foto', '$judul', '$berita', ' $tgl') ");
     if ($query){
-        echo "<script>alert ('SimpanBerita Berhasil'); window.location='index.php'</script>";
+        echo "<script>alert ('SimpanBerita Berhasil'); window.location='list.php'</script>";
     }else{
-        echo "<script>alert('Simpan Berita Gagal'); window.location='index.php'</script>";
+        echo "<script>alert('Simpan Berita Gagal'); window.location='list.php'</script>";
     }
 }
 
@@ -35,44 +33,40 @@ if ($num > 0) { // sudah ada data padatable
     if((strlen(strval ($num))) && (strval($num) != "9")) { //jumlah datadibawah 10 dan tidak 9
         $new_id_berita = "BRTO".strval($num+1);
     }else{ 
-        $new_id_berita = $num+1;
+        $new_id_berita = "BRT".strval($num+1);
     }
 }else {
     $new_id_berita = "BRT01"; //setting
 }
 echo "
-<form enctype='multipart/form-data' action='./input.php' method='post'>
-    <table>
-        <tr>
-            <td height='48'> ID berita </td>
-            <td> : </td>
-            <td> <input type='text' name='id' value='".$new_id_berita."' style='width:200px; height:35px; font-family: 'Century Gothic';' disabled='disabled' /></td>
-        </tr>
-        <tr>
-            <td height='58'> Upload Gambar </td>
-            <td> : </td>
-            <td>
-                <input name='gambar' type='file' style='width: 250px; height:35px;
-border:1px solid #333333;'/>
-                <input type='hidden' name='MAX_FILE_SIZE' value='3000000'/>
-            </td>
-        </tr>
-        <tr>
-            <td height='52'> Judul </td>
-            <td> : </td>
-            <td><input type='text' name='judul' style='width:200px; height:35px; font-family: 'Century Gothic';' /></td>
-        </tr>
-        <tr>
-            <td> Berita </td>
-            <td> : </td>
-            <td><textarea name='berita' style='height:400px; width:900px;' cols='50' id='area5'></textarea></td>
-        </tr>
-        <tr>
-            <td height='38' colspan='3' align='left'>
-                <input type='submit' class='btn btn-outline btn-primary' name='submit'value='simpan' class='form-submit' />
-            </td>
-        </tr>
-    </table>
-</form>'
-</body>"
+        <div class='card-title text-center'>
+            <h1>Input Berita</h1>
+        </div>
+        <div class='card-content'>
+            <form enctype='multipart/form-data' action='./input.php' method='post' style='margin-left : 10px; margin-right:10px;'>
+                <div class='form-group'>
+                    <label for='id'>ID Berita</label>
+                    <input type='text' class='form-control' value='".$new_id_berita."' name='id' id='id' disabled>
+                </div> 
+                <div class='form-group'>
+                    <label for='gambar'>Upload Gambar</label>
+                    <input type='file' class='form-control' name='gambar' id='gambar' >
+                </div>
+                <div class='form-group'>
+                    <label for='judul'>Judul</label>
+                    <input type='text' class='form-control' name='judul' id='judul' >
+                </div>
+                <div class='form-group'>
+                    <label for='berita'>Isi Berita</label>
+                    <textarea class='form-control' name='berita' id='berita' style'height:400px;'> </textarea>
+                </div>
+                <div class='form-group d-flex justify-content-center'>
+                    <button type='submit' class='btn btn-primary' name='submit'>Submit</button>
+                </div>
+            </form>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>"
 ?>
