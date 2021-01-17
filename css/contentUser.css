@@ -1,0 +1,26 @@
+#user-content-wrapper{
+    border: none;
+}
+
+#user-content-wrapper #btn-add-content{
+    margin-bottom: 20px;
+}
+
+#user-content-wrapper #user-content-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#user-content-wrapper #user-content-image{
+    width: 100px;
+    height: 100px;
+}
+
+#user-content-wrapper .icon-action{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#user-content-wrapper #table-action{
+    min-width: 100px;
+}

@@ -1,0 +1,29 @@
+#list-wrap{
+    height: 900px;
+}
+
+#list-title{
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+#list-content{
+    margin-bottom: 50px;
+}
+
+#list-content-img{
+    height: 100px;
+}
+
+#list-content-title{
+    height: 100px;
+    color: black;
+}
+
+#list-content-title:hover{
+    text-decoration: none;
+}
+
+#content-wrapper .content{
+    margin-bottom: 50px;
+}

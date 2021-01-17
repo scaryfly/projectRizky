@@ -3,33 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>BTIKK</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./gambar/x-logo.png" />
+
+
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script src='./js/index.js'></script>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height : 100px;">
-        <span class="navbar-brand h1 text-white">Navbar Image</span>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-between" id='navbar'>
+        <a class="navbar-brand" href="#">
+            <img src="./gambar/rsz_2logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <p class="navbar-brand">
+                    <img src="./gambar/phone.png" class="d-inline-block align-top" alt="">
+                    <span>Telp : (0361) 723969</span>
+                </p>
+            </li>
+            <li class="nav-item">
+                <p class="navbar-brand">
+                    <img src="./gambar/email.png" class="d-inline-block align-top" alt="">
+                    <span>E-mail : sekr-btikk@bppt.go.id</span>
+                </p>
+            </li>
+        </ul>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="mx-auto">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
-            </ul>
+    <div class=" container-fluid sticky-top" id="navbar-2">
+        <div class="row text-center">
+            <div class="col-3">
+                <a href="index.php">Beranda</a>
+            </div>
+            <div class="col-3">
+                <a href="#">Profil</a>
+            </div>
+            <div class="col-3">
+                <a href="#">Kontak Kami</a>
+            </div>
+            <div class="col-3">
+                <a href="login.php">Masuk</a>
+            </div>
         </div>
-    </nav>
+    </div>
+    <div class="container-fluid">
+    
 
     
