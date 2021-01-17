@@ -63,7 +63,7 @@
   <div class="list-group list-group-flush">
     <a href="./berita.php" class="list-group-item list-group-item-action bg-white text-black ">Berita</a>
     <a href="./admin.php" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
-    <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Overview</a>
+    <a href="./kategoriJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Jasa</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Events</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Profile</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Status</a>
