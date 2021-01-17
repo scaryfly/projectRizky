@@ -9,12 +9,12 @@ include('./dashboard.php');
             <div class='card-body' >
                 <form action='./proses/login.php' method='post'>
                     <div class='form-group'>
-                        <label for='email'>Alamat Email</label>
-                        <input type='email' class='form-control' name='email' id='email' aria-describedby='emailHelp' placeholder='Masukan Email'>
+                        <label for='username'>Username</label>
+                        <input type='text' class='form-control' name='username' id='email' placeholder='Masukan Username' required>
                     </div>
                     <div class='form-group'>
                         <label for='password'>Password</label>
-                        <input type='password' class='form-control' name='password' id='password' placeholder='Password'>
+                        <input type='password' class='form-control' name='password' id='password' placeholder='Password' required>
                     </div>
                     <div class='form-group d-flex justify-content-center'>
                         <button type='submit' class='btn btn-primary' name='submit'>Submit</button>

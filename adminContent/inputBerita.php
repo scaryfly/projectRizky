@@ -1,10 +1,5 @@
-<?php   
-    session_start();
-    if( !isset($_SESSION['user']) ){
-        header("location:../login.php");
-    }
+<?php
     include("../dashboardUser.php");
-    include("../db.php");
 ?>
 
 <div class="card-title text-center" id="user-content-title">

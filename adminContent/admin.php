@@ -1,10 +1,5 @@
-<?php   
-    session_start();
-    if( !isset($_SESSION['user']) ){
-        header("location:../login.php");
-    }
+<?php
     include("../dashboardUser.php");
-    include("../db.php");
 ?>
 
     <div class="card-title text-center" id="user-content-title">
@@ -12,7 +7,7 @@
     </div>
     <div class='card-content'>
         <div class="container">
-            <button class='btn bg-primary text-white' id='btn-add-content' onclick="window.location = './inputBerita.php';">
+            <button class='btn bg-primary text-white' id='btn-add-content' onclick="window.location = './inputAdmin.php';">
                     <i class="fa fa-plus-square"></i>
                     <span> Tambah Admin</span>
             </button>
@@ -49,7 +44,7 @@
     {
       echo "
             <tr>
-              <td class='text-center' colspan='4'>
+              <td class='text-center' colspan='8'>
                 Data Kosong
               </td>
             </tr>";
@@ -67,8 +62,8 @@
                     <td class='text-center'>".$array ['email']."</td>
                     <td class='text-center'>".$array['username']."</td>
                     <td class='text-center' id='table-action'>
-                        <a class='text-warning icon-action' href='./editBerita.php?id=".$array['id']."'><i class='fa fa-edit'></i></a> 
-                        <a class='text-danger icon-action' href='../proses/deleteBerita.php?id=".$array['id']."'><i class='fa fa-trash'></i></a>
+                        <a class='text-warning icon-action' href='./editAdmin.php?id=".$array['id']."'><i class='fa fa-edit'></i></a> 
+                        <a class='text-danger icon-action' href='../proses/deleteAdmin.php?id=".$array['id']."'><i class='fa fa-trash'></i></a>
                     </td>
                 </tr>
           ";

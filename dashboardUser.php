@@ -1,3 +1,11 @@
+<?php   
+    session_start();
+    if( !isset($_SESSION['user']) ){
+        header("location:../login.php");
+    }
+    include("../db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +62,7 @@
   <div class="sidebar-heading text-black">Daftar Menu</div>
   <div class="list-group list-group-flush">
     <a href="./berita.php" class="list-group-item list-group-item-action bg-white text-black ">Berita</a>
-    <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
+    <a href="./admin.php" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Overview</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Events</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Profile</a>
@@ -74,15 +82,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+        <?php
+           $id = $_SESSION['user'];
+           $sql = mysqli_query($conn,"SELECT name FROM user where id = $id");
+           $admin = mysqli_fetch_assoc($sql); #memecahkan data row yang di pilih menjadidata dalam bentuk array 
+           echo "
+          <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+            ".$admin['name']."
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <div class='dropdown-menu dropdown-menu-right' aria-labelledby='navbarDropdown'>
+            <a class='dropdown-item' href='./editPassword.php?id=".$id."'>Ubah Password</a>
+            <div class='dropdown-divider'></div>
+            <a class='dropdown-item' href='../proses/logout.php'>Keluar</a>
+          </div>";
+          ?>
         </li>
       </ul>
     </div>

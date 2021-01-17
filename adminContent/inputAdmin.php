@@ -1,10 +1,5 @@
-<?php   
-    session_start();
-    if( !isset($_SESSION['user']) ){
-        header("location:../login.php");
-    }
+<?php
     include("../dashboardUser.php");
-    include("../db.php");
 ?>
 
 <div class="card-title text-center" id="user-content-title">
@@ -12,14 +7,14 @@
 </div>
 <div class='card-content'>
     <div class='container'>
-        <form enctype='multipart/form-data' action='../proses/inputBerita.php' method='post' style='margin-left : 10px; margin-right:10px;'>
+        <form enctype='multipart/form-data' action='../proses/inputAdmin.php' method='post' style='margin-left : 10px; margin-right:10px;'>
             <div class='form-group'>
                 <label for='name'>Nama</label>
                 <input type='text' class='form-control' name='name' id='name' required>
             </div>
             <div class="form-group">
                 <label for="jenis_kelamin">Jenis Kelamin</label>
-                <select class="form-control" id="jenis_kelamin">
+                <select class="form-control" name='jenis_kelamin' id="jenis_kelamin">
                     <option>laki-laki</option>
                     <option>perempuan</option>
                 </select>
