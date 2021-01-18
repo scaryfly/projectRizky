@@ -4,13 +4,11 @@
     {
         $id = $_GET['id'];
         $judul = $_POST['judul'];
-        $berita = $_POST ['berita'];
-        $tgl = date("Y-m-d");
-        $sql = mysqli_query($conn,"SELECT * FROM tbberita where id_berita = '$id'");
+        $sql = mysqli_query($conn,"SELECT * FROM tbgalery where id_galery = '$id'");
         $data = mysqli_fetch_array($sql);
-        $foto = $data['gambar'];
+        $foto = $data['foto'];
         $tmpFoto = $_FILES['gambar']['name']; //mengambil data nama file
-        if(!empty($tmpFoto)){ //conditional apabila tidak mengubah gambar
+        if(!empty($tmpFoto)){ //conditional apabila mengubah gambar
             $uploaddir = '../gambar/' ; // upload gambar ke folder images
             $fileName = $_FILES['gambar']['name'];
             $foto = $uploaddir.$fileName;
@@ -22,13 +20,13 @@
                 $foto = 'gambar/default';
             }
         }
-        $sql = mysqli_query($conn,"update tbberita set id_berita='$id',gambar='$foto',judul='$judul',berita='$berita', tgl_upload='$tgl'  where id_berita='$id'");
+        $sql = mysqli_query($conn,"update tbgalery set foto='$foto',judul='$judul' where id_galery='$id'");
         if ($sql) {
-            echo "<script>alert ('Edit Berita Berhasil'); window.location='../adminContent/berita.php'</script>";
+            echo "<script>alert ('Edit Galery Berhasil'); window.location='../adminContent/galery.php'</script>";
         }else{
-            echo "<script>alert ('Edit Berita Gagal'); window.location='../adminContent/editBerita.php?id=".$id."'</script>";
+            echo "<script>alert ('Edit Galery Gagal'); window.location='../adminContent/galery.php'</script>";
         }
     }else{
-        echo "<script>alert ('Edit Berita Gagal'); window.location='../adminContent/editBerita.php?id=".$id."'</script>";
+        echo "<script>alert ('Edit Galery Gagal'); window.location='../adminContent/galery.php'</script>";
     }
 ?>

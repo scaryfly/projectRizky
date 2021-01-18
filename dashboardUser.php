@@ -65,7 +65,7 @@
     <a href="./admin.php" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
     <a href="./kategoriJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Jasa</a>
     <a href="./kategoriKunjungan.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Kunjungan</a>
-    <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Profile</a>
+    <a href="./galery.php" class="list-group-item list-group-item-action bg-white text-black ">Galery</a>
     <a href="#" class="list-group-item list-group-item-action bg-white text-black ">Status</a>
   </div>
 </div>
