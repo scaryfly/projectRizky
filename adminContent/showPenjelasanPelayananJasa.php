@@ -6,12 +6,12 @@
         <?php
         $id = $_GET['id'];
 
-        $sql = mysqli_query($conn,"SELECT * FROM tb_pelayananinformasi where id_pelayananInformasi = $id");
+        $sql = mysqli_query($conn,"SELECT * FROM tb_pelayananjasa where id_pelayananJasa = $id");
         $data = mysqli_fetch_assoc($sql); #memecahkan data row yang di pilih menjadidata dalam bentuk array 
 
         $gambar = $data['gambar'];  #dapatkan gambar dari data array (row) 'gambar'
         $judul = $data['judul']; #dapatkan jurusan mahasiswa dari data array (row) ‘jurusan’
-        $informasi = $data['informasi'];#dapatkan kelamin mahasiswa array (row) 'berita'
+        $informasi_jasa = $data['informasi_jasa'];#dapatkan kelamin mahasiswa array (row) 'berita'
         $tgl = $data['tgl_upload'];#dapatkan kelamin mahasiswa array (row) 'berita'
         
         echo "
@@ -22,7 +22,7 @@
             <div class='text-center content'>
                 <img src='../".$gambar."' class='rounded img-thumbnail' alt='Judul Berita'> 
             </div>
-            <p class='text-justify content'>".$informasi."</p>
+                <p class='text-justify content'>".$informasi_jasa."</p>
             </div>"
         ?>
     </div>      

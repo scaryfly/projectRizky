@@ -69,6 +69,7 @@
     <a href="./pemesananJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Pemesanan Jasa</a>
     <a href="./kunjungan.php" class="list-group-item list-group-item-action bg-white text-black ">Kunjungan</a>
     <a href="./penjelasanPelayananInformasi.php" class="list-group-item list-group-item-action bg-white text-black ">Penjelasan Pelayanan Informasi</a>
+    <a href="./penjelasanPelayananJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Penjelasan Pelayanan Jasa</a>
   </div>
 </div>
 
