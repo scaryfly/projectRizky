@@ -32,6 +32,7 @@
 
     <script src='../js/sidebar.js'></script>
     <script src='../js/editor.js'></script>
+    <script src='../js/secondEditor.js'></script>
 
 </head>
 <body>
@@ -61,15 +62,17 @@
 <div class="bg-white border-right" id="sidebar-wrapper">
   <div class="sidebar-heading text-black">Daftar Menu</div>
   <div class="list-group list-group-flush">
-    <a href="./berita.php" class="list-group-item list-group-item-action bg-white text-black ">Berita</a>
-    <a href="./admin.php" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
-    <a href="./kategoriJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Jasa</a>
-    <a href="./kategoriKunjungan.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Kunjungan</a>
-    <a href="./galery.php" class="list-group-item list-group-item-action bg-white text-black ">Galery</a>
     <a href="./pemesananJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Pemesanan Jasa</a>
     <a href="./kunjungan.php" class="list-group-item list-group-item-action bg-white text-black ">Kunjungan</a>
+    <a href="./kategoriJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Jasa</a>
+    <a href="./kategoriKunjungan.php" class="list-group-item list-group-item-action bg-white text-black ">Kategori Kunjungan</a>
     <a href="./penjelasanPelayananInformasi.php" class="list-group-item list-group-item-action bg-white text-black ">Penjelasan Pelayanan Informasi</a>
     <a href="./penjelasanPelayananJasa.php" class="list-group-item list-group-item-action bg-white text-black ">Penjelasan Pelayanan Jasa</a>
+    <a href="./admin.php" class="list-group-item list-group-item-action bg-white text-black ">Admin</a>
+    <a href="./berita.php" class="list-group-item list-group-item-action bg-white text-black ">Berita</a>
+    <a href="./sambutan.php" class="list-group-item list-group-item-action bg-white text-black ">Sambutan</a>
+    <a href="./visiMisi.php" class="list-group-item list-group-item-action bg-white text-black ">Visi dan Misi</a>
+    <a href="./galery.php" class="list-group-item list-group-item-action bg-white text-black ">Galery</a>
   </div>
 </div>
 
