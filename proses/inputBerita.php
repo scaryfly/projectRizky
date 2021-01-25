@@ -3,7 +3,7 @@
     if(isset($_POST['submit'] ))
     {
         $uploaddir = '../gambar/' ; // upload gambar ke folder images
-        $fileName = $_FILES['gambar']['name'];
+        $fileName = substr(md5(openssl_random_pseudo_bytes(20)),-20);
         $foto = $uploaddir.$fileName;
         if(move_uploaded_file ( $_FILES['gambar']['tmp_name'] , $foto)){
             echo "<script>console.log('success');</script>";
@@ -18,7 +18,7 @@
 
         $query = mysqli_query($conn,"INSERT INTO tbberita (gambar, judul, berita, tgl_upload) values ('$foto', '$judul', '$berita', ' $tgl') ");
         if ($query){
-            echo "<script>alert ('SimpanBerita Berhasil'); window.location='../adminContent/berita.php'</script>";
+            echo "<script>alert ('Simpan Berita Berhasil'); window.location='../adminContent/berita.php'</script>";
         }else{
             echo "<script>alert('Simpan Berita Gagal'); window.location='../adminContent/berita.php'</script>";
         }

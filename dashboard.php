@@ -1,3 +1,6 @@
+<?php   
+    include("./db.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +29,7 @@
     <script src='./js/index.js'></script>
 
 </head>
-<body>
+<body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark justify-content-between" id='navbar'>
         <a class="navbar-brand" href="#">
             <img src="./gambar/rsz_2logo.png" alt="logo">
@@ -47,22 +50,14 @@
         </ul>
     </nav>
     <div class=" container-fluid sticky-top" id="navbar-2">
-        <div class="row text-center">
-            <div class="col-3">
-                <a href="index.php">Beranda</a>
-            </div>
-            <div class="col-3">
-                <a href="#">Profil</a>
-            </div>
-            <div class="col-3">
-                <a href="#">Kontak Kami</a>
-            </div>
-            <div class="col-3">
-                <a href="login.php">Masuk</a>
-            </div>
+        <div class="d-flex justify-content-around">
+            <a class="navbrand" href="index.php">Beranda</a>
+            <a class="navbrand" href="index.php">Profil</a>
+            <a class="navbrand" href="index.php">Reservasi</a>
+            <a class="navbrand" href="login.php">Masuk</a>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid bg-light">
     
 
     

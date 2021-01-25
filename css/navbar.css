@@ -31,11 +31,11 @@
     background-color: #110073;
 }
 
-#navbar-2 .row .col-3 a{
+#navbar-2 .navbrand{
     font-size: 18px;
     color: #ffffff !important;
 }
-#navbar-2 .row .col-3 a:hover{
+#navbar-2 .navbrand:hover{
     color: #00c1d1 !important;
     text-decoration: none;
 }
