@@ -13,20 +13,12 @@
         if($no==0){
           echo " 
             <div class='carousel-item active'>
-              <img src='".$array["gambar"]."' class='w-100'>
-              <div class='carousel-caption'>
-                <h5>First slide label</h5>
-                <p>".$array["judul"]."</p>
-              </div>
+              <img src='".$array["gambar"]."' class='w-100 h-100'>
             </div>";
         }else{
           echo " 
             <div class='carousel-item'>
-              <img src='".$array["gambar"]."' class='w-100'>
-              <div class='carousel-caption'>
-                <h5>First slide label</h5>
-                <p>".$array["judul"]."</p>
-              </div>
+              <img src='".$array["gambar"]."' class='w-100 h-100'>
             </div>";
         }
         $no++;

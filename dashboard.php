@@ -52,7 +52,17 @@
     <div class=" container-fluid sticky-top" id="navbar-2">
         <div class="d-flex justify-content-around">
             <a class="navbrand" href="index.php">Beranda</a>
-            <a class="navbrand" href="index.php">Profil</a>
+            <div class="dropdown">
+                <a class="navbrand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Profile
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
             <a class="navbrand" href="index.php">Reservasi</a>
             <a class="navbrand" href="login.php">Masuk</a>
         </div>
