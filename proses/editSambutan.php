@@ -13,7 +13,9 @@
         $tmpFoto = $_FILES['gambar']['name']; //mengambil data nama file
         if(!empty($tmpFoto)){ //conditional apabila tidak mengubah gambar
             $uploaddir = '../gambar/' ; // upload gambar ke folder images
-            $fileName = $_FILES['gambar']['name'];
+            $array = explode('.', $_FILES['gambar']['name']);
+            $ext = end($array);
+            $fileName = substr(md5(openssl_random_pseudo_bytes(20)),-20).".".$ext;
             $foto = $uploaddir.$fileName;
             if(move_uploaded_file ( $_FILES['gambar']['tmp_name'] , $foto)){
                 echo "<script>console.log('success');</script>";

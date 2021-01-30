@@ -3,7 +3,9 @@
     if(isset($_POST['submit'] ))
     {
         $uploaddir = '../gambar/' ; // upload gambar ke folder images
-        $fileName = substr(md5(openssl_random_pseudo_bytes(20)),-20);
+        $array = explode('.', $_FILES['gambar']['name']);
+        $ext = end($array);
+        $fileName = substr(md5(openssl_random_pseudo_bytes(20)),-20).".".$ext;
         $foto = $uploaddir.$fileName;
         if(move_uploaded_file ( $_FILES['gambar']['tmp_name'] , $foto)){
             echo "<script>console.log('success');</script>";

@@ -58,12 +58,31 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Sambutan</a>
+                    <a class="dropdown-item" href="#">Visi dan Misi</a>
+                    <a class="dropdown-item" href="#">Galery</a>
                 </div>
             </div>
-            <a class="navbrand" href="index.php">Reservasi</a>
+            <div class="dropdown">
+                <a class="navbrand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pelayanan
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Pelayanan Jasa</a>
+                    <a class="dropdown-item" href="#">Pelayanan Informasi</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="navbrand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Reservasi
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Reservasi Jasa</a>
+                    <a class="dropdown-item" href="#">Reservasi Kunjungan</a>
+                </div>
+            </div>
             <a class="navbrand" href="login.php">Masuk</a>
         </div>
     </div>
