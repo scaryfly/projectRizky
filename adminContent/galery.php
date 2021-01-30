@@ -74,7 +74,7 @@
                                     $num = mysqli_num_rows($tampil);
                                     $jmlhalaman = ceil($num/$batas);
                                     for($i=1;$i<=$jmlhalaman;$i++) {
-                                            echo "<li class='page-item'><a class='page-link' href='berita.php?halaman=$i'>$i</a></li>";
+                                            echo "<li class='page-item'><a class='page-link' href='galery.php?halaman=$i'>$i</a></li>";
                                     }
                                 ?>
                     </div>

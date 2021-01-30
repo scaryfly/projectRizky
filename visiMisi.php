@@ -1,7 +1,10 @@
 <?php
     include("./dashboard.php");
 ?>
-    <div class='d-flex justify-content-center' style='margin-top : 30px'>
+    <div class="text-center">
+            <h1>Visi dan Misi</h1>
+    </div>
+    <div class='container d-flex justify-content-center' style='margin-top : 30px'>
         <div>
             <?php
                 $sql = mysqli_query ($conn,"SELECT * FROM tb_visiMisi limit 1");
@@ -11,15 +14,12 @@
                 if($num==0)
                 {
                 echo "
-                            <button class='btn bg-primary text-white' id='btn-add-content' onclick='window.location = `./inputVisiMisi.php`;'>
-                                <i class='fa fa-plus-square'></i>
-                                <span>Tambah Visi dan Misi</span>
-                            </button>";
+                            <h1 class='not-found-text'><b>404 PAGE NOT FOUND</b></h1>";
                 }else{
                     echo "
-                            <h2>Visi</h2>
+                            <h2>Visi Balai Teknologi Industri Kreatif Keramik</h2>
                             <p>".$data['visi']."</p>
-                            <h2>Misi</h2>
+                            <h2>Misi Balai Teknologi Industri Kreatif Keramik</h2>
                             <p>".$data['misi']."</p>";
                 }
             ?>

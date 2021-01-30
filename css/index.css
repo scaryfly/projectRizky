@@ -7,3 +7,8 @@
 .container-fluid .carousel-caption{
     bottom: 50% !important;
 }
+
+.not-found-text{
+    margin-top: 30% !important;
+    margin-bottom: 40% !important;
+}
