@@ -39,7 +39,7 @@
     <script src='./js/index.js'></script>
 
 </head>
-<body class="bg-light">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark justify-content-between" id='navbar'>
         <a class="navbar-brand" href="#">
             <img src="./gambar/rsz_2logo.png" alt="logo">
@@ -97,7 +97,7 @@
             <a class="navbrand" href="login.php">Masuk</a>
         </div>
     </div>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid">
     
 
     

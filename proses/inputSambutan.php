@@ -14,12 +14,10 @@
             echo "<script>console.log('not success');</script>";
             $foto = 'gambar/default';
         }
-        $nama = $_POST ['nama'];
-        $jabatan = $_POST ['jabatan'];
         $deskripsi = $_POST ['deskripsi'];
         $tgl = date("Y-m-d");
 
-        $query = mysqli_query($conn,"INSERT INTO tb_sambutan (nama, jabatan, gambar, deskripsi) values ('$nama', '$jabatan', '$foto', '$deskripsi') ");
+        $query = mysqli_query($conn,"INSERT INTO tb_sambutan (gambar, deskripsi) values ('$foto', '$deskripsi') ");
         if ($query){
             echo "<script>alert ('Simpan Sambutan Berhasil'); window.location='../adminContent/sambutan.php'</script>";
         }else{

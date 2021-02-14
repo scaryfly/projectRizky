@@ -2,7 +2,7 @@
     include("./dashboard.php");
 ?>
     <div class="text-center">
-            <h1>Visi dan Misi</h1>
+            <h1 class='text-info'><strong>Visi dan Misi</strong></h1>
     </div>
     <div class='container d-flex justify-content-center' style='margin-top : 30px'>
         <div>

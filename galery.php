@@ -2,9 +2,9 @@
     include("./dashboard.php");
 ?>
     <div class="text-center">
-            <h1>Galery</h1>
+            <h1 class='text-info'><strong>Galery</strong></h1>
     </div>
-    <div class="container page-top">
+    <div class="container mt-5">
         <div class="row imglist">
             <?php
                 $sql = mysqli_query($conn,"SELECT * FROM tbgalery");

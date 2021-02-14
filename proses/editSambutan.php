@@ -3,8 +3,6 @@
     if(isset($_POST['submit'] ))
     {
         $id = $_GET['id'];
-        $nama = $_POST['nama'];
-        $jabatan = $_POST ['jabatan'];
         $deskripsi = $_POST ['deskripsi'];
         $tgl = date("Y-m-d");
         $sql = mysqli_query($conn,"SELECT * FROM tb_sambutan where id_sambutan = '$id'");
@@ -25,7 +23,7 @@
                 $foto = 'gambar/default';
             }
         }
-        $sql = mysqli_query($conn,"update tb_sambutan set gambar='$foto',nama='$nama', deskripsi='$deskripsi', jabatan='$jabatan'  where id_sambutan='$id'");
+        $sql = mysqli_query($conn,"update tb_sambutan set gambar='$foto', deskripsi='$deskripsi'  where id_sambutan='$id'");
         if ($sql) {
             echo "<script>alert ('Edit Sambutan Berhasil'); window.location='../adminContent/sambutan.php'</script>";
         }else{
