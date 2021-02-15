@@ -5,7 +5,7 @@
     <div id="carouselExampleControls" class="carousel slide carousel-container" data-ride="carousel">
       <div class="carousel-inner">
         <?php
-          $tampil = mysqli_query ($conn,"SELECT gambar, judul FROM tbberita order by id_berita desc limit 5");
+          $tampil = mysqli_query ($conn,"SELECT * FROM tbberita order by id_berita desc limit 5");
           $num = mysqli_num_rows($tampil);
           $no = 0;
           while($array=mysqli_fetch_array($tampil))
@@ -15,7 +15,7 @@
                     <div class='carousel-item active'>
                       <img src='".$array["gambar"]."' class='w-100 h-100'>
                       <div class='carousel-caption d-none d-md-block text-left text-dark bg-white'>
-                        <a class='text-dark font-weight-bold text-decoration-none' href='#'><strong>".$array["judul"]."</strong></a>
+                        <a class='text-dark font-weight-bold text-decoration-none' href='showBerita.php?id=".$array['id_berita']."'><strong>".$array["judul"]."</strong></a>
                       </div>
                     </div>";
                 }else{
@@ -23,7 +23,7 @@
                     <div class='carousel-item'>
                       <img src='".$array["gambar"]."' class='w-100 h-100'>
                       <div class='carousel-caption d-none d-md-block text-left text-dark bg-white'>
-                        <a class='text-dark font-weight-bold text-decoration-none' href='#'><strong>".$array["judul"]."</strong></a>
+                        <a class='text-dark font-weight-bold text-decoration-none' href='showBerita.php?id=".$array['id_berita']."'><strong>".$array["judul"]."</strong></a>
                       </div>
                     </div>";
                 }

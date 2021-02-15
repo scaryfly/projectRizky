@@ -25,7 +25,7 @@
                                         <img src='./".$array['gambar']."' class='img-thumbnail' style='max-width: 300px;'/> 
                                     </td>
                                     <td>
-                                        <a href='#' class='text-dark font-weight-bold text-left' style='font-size:large;'><strong>".$array['judul']."</strong></a>
+                                        <a href='showPelayananInformasi.php?id=".$array['id_pelayananInformasi']."' class='text-dark font-weight-bold text-left' style='font-size:large;'><strong>".$array['judul']."</strong></a>
                                         <div class='overflow-hidden mt-3' style='height:100px'>".$array['informasi']."</div>
                                     </td>
                                 </tr>";

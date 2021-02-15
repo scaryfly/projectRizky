@@ -36,7 +36,7 @@
                                     <img src='./".$array['gambar']."' class='img-thumbnail' style='max-width: 300px;'/> 
                                 </td>
                                 <td>
-                                    <a href='#' class='text-dark font-weight-bold text-left' style='font-size:large;'><strong>".$array['judul']."</strong></a>
+                                    <a href='./showBerita.php?id=".$array['id_berita']."' class='text-dark font-weight-bold text-left' style='font-size:large;'><strong>".$array['judul']."</strong></a>
                                 </td>
                             </tr>";
                     }
