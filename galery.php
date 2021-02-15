@@ -7,7 +7,7 @@
     <div class="container mt-5">
         <div class="row imglist">
             <?php
-                $sql = mysqli_query($conn,"SELECT * FROM tbgalery");
+                $sql = mysqli_query($conn,"SELECT * FROM tbgalery order by id_galery asc");
                 $num = mysqli_num_rows($sql);
                 #dilakukan pengecekan apabila data kosong maka yang Empty jika akan tampil adalah Data kosong maka Tidak data akan tampil
                 if($num==0)

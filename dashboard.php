@@ -68,7 +68,6 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Sambutan</a>
                     <a class="dropdown-item" href="./visiMisi.php">Visi dan Misi</a>
                     <a class="dropdown-item" href="./galery.php">Galery</a>
                 </div>
@@ -79,8 +78,8 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Pelayanan Jasa</a>
-                    <a class="dropdown-item" href="#">Pelayanan Informasi</a>
+                    <a class="dropdown-item" href="pelayananJasa.php">Pelayanan Jasa</a>
+                    <a class="dropdown-item" href="pelayananInformasi.php">Pelayanan Informasi</a>
                 </div>
             </div>
             <div class="dropdown">
